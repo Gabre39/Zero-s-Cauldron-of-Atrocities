@@ -1,0 +1,195 @@
+{
+	"siteVersion": "1.142.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ZerosCauldronofAtrocities",
+				"abbreviation": "ZCoA",
+				"full": "Zero's Cauldron of Atrocities",
+				"url": "",
+				"authors": [
+					"Zero"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1637553491,
+		"dateLastModified": 1637553491
+	},
+	"monster": [
+		{
+			"name": "Tempest Shinigami",
+			"source": "ZerosCauldronofAtrocities",
+			"size": "M",
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"Studded Leather Armor"
+					],
+					"condition": "22 while wielding Raijin"
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 80",
+				"average": 190
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 19,
+			"int": 13,
+			"wis": 17,
+			"cha": 12,
+			"save": {
+				"dex": "+11",
+				"wis": "+9",
+				"str": "+9"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"stealth": "+11",
+				"survival": "+9",
+				"perception": "+9",
+				"intimidation": "+7",
+				"religion": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"languages": [
+				"Common"
+			],
+			"cr": "18",
+			"trait": [
+				{
+					"name": "Raijin",
+					"entries": [
+						"The Tempest Shinigami wields Raijin, a weapon enhanced by its blood mark. The weapon has several properties. ",
+						"• Attacks with Raijin doesn't have disadvantage due to having a creature in melee range.",
+						"• The weapon hovers at a unnocupied space adjacent to the target of its ranged attacks.",
+						"• While hovering, a line between the weapon and the shinigami exists. Any creature that pass through or get passe by that space must do a {@dc 19} Dexterity saving throw,  taking [[{@dice 3d6}]] lightning damage, or half as much damage in a success. A creature can take damage from this only once per round.",
+						"• While wielding Raijin, the Shinigami has resistance to lightning and thunder damage, and has a +2 bonus to its AC."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the tempest shinigami is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the tempest shinigami instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the tempest shinigami fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tempest Shinigami makes three attacks."
+					]
+				},
+				{
+					"name": "Raijin",
+					"entries": [
+						"{@atk mw,rw} {@hit 11} to hit, reach 5 ft. or range 60/60 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage in melee, or 15 ({@damage 3d6 + 5}) damage at range, plus 10 ({@damage 3d6}) lightning damage."
+					]
+				},
+				{
+					"name": "Fuujin",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage, plus 14 ({@damage 4d6}) thunder damage. A creature must make a CD 19 Strength saving throw or be pushed up to 15 feet away from the Shinigami."
+					]
+				},
+				{
+					"name": "Thunderous Bounce {@recharge 5}",
+					"entries": [
+						"The Shinigami makes a ranged Raijin attack against up to 6 creatures, whether it hits or misses, the targets must make a CD 19 Constitution saving throw, taking [[{@dice 6d6}]] thunder damage, or half in a success. If a creature fails by 5 or more (14) it is also {@condition stunned} for one minute, it can repeat the save at the end of each of its turns."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Lightning Transposition",
+					"entries": [
+						"The Tempest Shinigami vanishes into lightning and teleports to the location of Raijin, and wields it."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Lightning Reprisal",
+					"entries": [
+						"When a creature hits the Shinigami with a melee attack and he is wielding Raijin, he can use its reaction to deal [[{@dice 4d10}]] lightning damage to the attacker."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Tempest Shinigami makes an attack."
+					]
+				},
+				{
+					"name": "Lightning Transposition (2 actions)",
+					"entries": [
+						"The Tempest Shinigami uses Lightning Transposition."
+					]
+				},
+				{
+					"name": "Thunderous Chain",
+					"entries": [
+						"The chain bursts in thunderous energy, any creature besides the shinigami that is within 10 feet of the chain must make a {@dc 19} Constitution saving throw or take {@damage 4d6} thunder damage and be pushed 10 feet away, or half damage and not be pushed away in a success."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552939792866869249/892676671914790912/token_1_2.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/552939792866869249/892676671914790912/token_1_2.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		}
+	]
+}
