@@ -1,0 +1,1817 @@
+{
+	"siteVersion": "1.186.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ZerosCauldronofAtrocities",
+				"abbreviation": "ZCoA",
+				"full": "Zero's Cauldron of Atrocities",
+				"url": "",
+				"authors": [
+					"Zero"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1694968277,
+		"dateLastModified": 1694968277
+	},
+	"monster": [
+		{
+			"name": "Anzai",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "Oni",
+						"prefix": "Upper Moon 3"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				22
+			],
+			"hp": {
+				"formula": "50d8 + 250",
+				"average": 475
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 20,
+			"con": 20,
+			"int": 14,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"str": "+16",
+				"dex": "+14",
+				"con": "+14"
+			},
+			"skill": {
+				"acrobatics": "+14",
+				"athletics": "+16",
+				"perception": "+13",
+				"stealth": "+14"
+			},
+			"senses": [
+				"Darkvision 120 ft",
+				"Blindsight 30 ft"
+			],
+			"passive": 23,
+			"resist": [
+				"lightning",
+				"thunder",
+				{
+					"special": "Bludgeoning, piercing and slashing from nonmagical weapons. Every other damage that's not from a magical source."
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "30",
+			"trait": [
+				{
+					"name": "Sunlight Hypersensitivity.",
+					"entries": [
+						"While in sunlight, the Demon takes 30 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks.The damage stacks, dealing plus 30 for every turn the demon starts in sunlight, and restarting when he doesn't start his turn in sunlight. For example, in the first turn, the demon takes 30 radiant damage, in the second, he takes 60."
+					]
+				},
+				{
+					"name": "Demonic Immortality",
+					"entries": [
+						"The Demon only dies, or become uncounscious in order to have 0 hit points if the damage is dealt by a magic source. Like spells, magic weapons and magic abilities. After they die, they transform into ashes, as they burn.",
+						"Also, they are immune to Disease."
+					]
+				},
+				{
+					"name": "Superior Regeneration",
+					"entries": [
+						"The Demon regains 50 hit points at the start of his turn. If he takes radiant damage from Sunlight Hypersensivity, this trait doesn't work until the end of his next turn.",
+						"The demon dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Wisteria Weakness",
+					"entries": [
+						"The Demons have aversion to Wisterias, if they start their turn while in contact to these flowers (At least half covered by them), the demon takes 10 poison damage, which ignores his resistances and immunities. ",
+						"Poisons made of wisterias also ignore the demon's immunities and resistances, including the condition immunities. ",
+						"Large Wisteria concentrations also damage them. When they begin, and end their turn at least 10 feet close to a Wisteria Concentration, they take 10 poison damage, and make a CD 16 constitution saving throw against Wisteria Poison. If the demon fails, he gets {@condition poisoned} for {@dice 1d4} rounds.   ",
+						"When a demon take damage in this way, it can't regenerate until the end of his next turn."
+					]
+				},
+				{
+					"name": "Demonic Strength",
+					"entries": [
+						"The demon can jump as much as it has movement speed with no need of a running start."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the anzai is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the anzai instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Anzai fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Kekkijutsu: God's Lightning and Thunder",
+					"entries": [
+						"Anzai can stack lightning in his drums, progressively gathering power to unleash its maximum strength. ",
+						"If Anzai has 3 Lightning stacks, he deals {@dice 1d4} lightning and {@damage 1d4} thunder damage on every creature besides him and the target that are within 5 feet of the target of his melee attacks",
+						"If Anzai has 5 lightning stacks, the AOE damage he deals turns into {@dice 1d8} intead of {@dice 1d4}. And his resistance to lightning and thunder turns into immunity."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Anzai makes four attacks"
+					]
+				},
+				{
+					"name": "Blow of the Thunder God",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d6 + 7}) bludgeoning damage, plus 28 ({@damage 8d6}) thunder damage.",
+						"The demon can choose to not deal the thunder damage, and instead push the target in a number of feet equal the thunder damage rolled. (Rounded down)"
+					]
+				},
+				{
+					"name": "Thunder God Staff",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 10 ft., one target. {@h}33 ({@damage 4d10 + 11}) bludgeoning damage.",
+						"If this attack is a critical hit, the target has disadvantage on all attack rolls, and half of its total speed until the start of his next turn."
+					]
+				},
+				{
+					"name": "Lightning Spear (Charged 2)",
+					"entries": [
+						"{@atk rw} {@hit 14} to hit, range 120/120 ft., one target. {@h}26 ({@damage 6d6 + 5}) lightning damage."
+					]
+				},
+				{
+					"name": "Punishment of the Thunder God (Charged 5)",
+					"entries": [
+						"Anzai gathers all his lightning and channels an enormous lightning bolt, spending all of its lightning stacks. Unleashing it in a 10 foot wide, and up to 5 miles long, every creature in the line must make a Dexterity saving throw {@dc 22} Dexterity Saving Throw taking {@damage 26d6} lightning damage, or half in a success. Anzai can choose to teleport himself with the lightning, appearing at the end of the line."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Charge {@recharge 4}",
+					"entries": [
+						"As a bonus action, Anzai charges a lightning stack, he can charge up to five lightning stacks. He gets the ability to use new actions and other upgrades as he gets stacks, and can spend the lightning stacks in these ways:"
+					]
+				},
+				{
+					"name": "Speed Burst (Charged 1 or 2)",
+					"entries": [
+						"He can spend up to two Lightning Stacks, for each stack he gains its movement again until the end of his turn. If he uses this ability, opportunity attacks against him have disadvantage while he has the additional speed."
+					]
+				},
+				{
+					"name": "Lightning Burst (Charged 1)",
+					"entries": [
+						"He can spend one lightning stack and deal extra {@damage 4d6} lightning damage on his next melee attack"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reactive Blow",
+					"entries": [
+						"When a creature enters in the range of Anzai's \"Blow of the Thunder God\", he can make an attack."
+					]
+				},
+				{
+					"name": "Thunderous Burst (Charged 3)",
+					"entries": [
+						"When a creature hits Anzai with an attack roll, he can choose to repel creatures around him. Each creature within 10 feet of Anzai must make a {@dc 22} Constitution saving throw, taking {@damage 5d6} thunder damage and being pushed 10 feet far from Anzai. Or half of the damage, and the target is not pushed on a success."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The demon makes an attack"
+					]
+				},
+				{
+					"name": "Decompose Poison",
+					"entries": [
+						"The demon can choose to succeed in the next poison saving throw if he's already {@condition poisoned}, forcing the save in advance when he uses the Legendary action."
+					]
+				},
+				{
+					"name": "Forced Regeneration (costs 2 actions)",
+					"entries": [
+						"The demon uses it's regeneration trait."
+					]
+				},
+				{
+					"name": "Charge (costs 2 actions)",
+					"entries": [
+						"Anzai recharges its Charge action."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The demon moves up to its movement."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552939792866869249/952736355648163881/token_1_13.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/552939792866869249/952736355648163881/token_1_13.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"L",
+				"R",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Arisa",
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "Oni",
+						"prefix": "Lower moon 2"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "24d8 + 120",
+				"average": 228
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 16,
+			"dex": 22,
+			"con": 20,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"wis": "+7",
+				"str": "+8",
+				"cha": "+5"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"insight": "+7",
+				"stealth": "+11",
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "Bludgeoning, piercing and slashing from nonmagical weapons. Every other damage that's not from a magical source."
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Demonic Immortality",
+					"entries": [
+						"The Demon only dies, or become uncounscious in order to have 0 hit points if the damage is dealt by a magic source. Like spells, magic weapons and magic abilities. After they die, they transform into ashes, as they burn.",
+						"Also, they are immune to Disease."
+					]
+				},
+				{
+					"name": "Demonic Strength",
+					"entries": [
+						"The demon can jump as much as it has movement speed with no need of a running start."
+					]
+				},
+				{
+					"name": "Sunlight Hypersensitivity",
+					"entries": [
+						"While in sunlight, the Demon takes 30 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks.The damage stacks, dealing plus 30 for every turn the demon starts in sunlight, and restarting when he doesn't start his turn in sunlight. For example, in the first turn, the demon takes 30 radiant damage, in the second, he takes 60."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The Demon regains 30 hit points at the start of his turn. If he takes radiant damage from Sunlight Hypersensivity, this trait doesn't work until the end of his next turn."
+					]
+				},
+				{
+					"name": "Wisteria Weakness",
+					"entries": [
+						"The Demons have aversion to Wisterias, if they start their turn while in contact to these flowers (At least half covered by them), the demon takes 10 poison damage, which ignores his resistances and immunities.",
+						"Poisons made of wisterias also ignore the demon's immunities and resistances, including the condition immunities.",
+						"Large Wisteria concentrations also damage them. When they begin, and end their turn at least 10 feet close to a Wisteria Concentration, they take 10 poison damage, and make a CD 16 constitution saving throw against Wisteria Poison. If the demon fails, he gets {@condition poisoned} for {@dice 1d4} rounds.",
+						"When a demon take damage in this way, it can't regenerate until the end of his next turn."
+					]
+				},
+				{
+					"name": "Kekkijutsu: Bleeding Mark",
+					"entries": [
+						"If Arisa hits an weapon attack, she can choose to mark the target. This bleeding mark doesn't stack and ends in one minute. While marked, Arisa can use some actions and reactions against the target. And her attacks deals an extra {@damage 2d6} necrotic damage on marked creatures",
+						"A creature can remove the bleeding mark with a lesser restoration or other similar spell."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Arisa makes two attacks"
+					]
+				},
+				{
+					"name": "Katana",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Bleeding Katana",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}16 ({@damage 3d6 + 6}) slashing damage, plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Bleed",
+					"entries": [
+						"Every creature marked by Arisa's Bleeding Mark must make a Constitution Saving Throw CD 19, taking {@damage 6d6} necrotic damage, or half of the damage in a success"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Bleeding Reprisal",
+					"entries": [
+						"If a creature hits Arisa with an attack roll, and the creature is marked, she can choose to force the mark to bleed, potentially turning the hit in a miss. The target must make a CD 19, taking {@damage 4d6} necrotic damage and is forced to make the attack with disadvantage. Or only half of the damage in a success and no disadvantage."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Bleed (2 actions)",
+					"entries": [
+						"Arisa uses Bleed"
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Arisa moves up to its speed, or half of its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Cut",
+					"entries": [
+						"Arisa makes an Katana attack"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552939792866869249/957538043592605706/token_1_15.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/552939792866869249/957538043592605706/token_1_15.png",
+			"traitTags": [
+				"Regeneration",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"N",
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Haruki",
+			"isNpc": true,
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"formula": "25d8 + 100",
+				"average": 212
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 12,
+			"wis": 16,
+			"cha": 14,
+			"save": {
+				"str": "+11",
+				"con": "+10",
+				"dex": "+9",
+				"int": "+4",
+				"wis": "+6",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+9",
+				"persuasion": "+8",
+				"survival": "+9"
+			},
+			"senses": [
+				"Darkvision 30 ft"
+			],
+			"passive": 19,
+			"languages": [
+				"Common"
+			],
+			"cr": "19",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the haruki fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "First Form: Unknowing Fire",
+					"entries": [
+						"The first attack of Haruki on his turn has advantage, as he leaps in high speed and slashes without giving any response time."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Haruki makes three attacks"
+					]
+				},
+				{
+					"name": "Katana",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}20 ({@damage 2d10 + 9}) slashing damage, plus 7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fourth Form: Blooming Flame Undulation [Recharge 4-6]",
+					"entries": [
+						"Haruki swings his sword in a circular motion, defending him from attacks and slashing at the same time. He makes an attack against a target within his reach, and each creature of his choice within 5 feet of him must make a CD 20 Dexterity Saving Throw taking [[{@dice 5d8}]] slashing damage and [[{@dice 5d8}]] fire damage. Or half as much damage in a success.",
+						"When this action is used, Haruki's AC increases by 6 until the start of his next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Recover (3/rest)",
+					"entries": [
+						"Haruki takes a deep breath, gathering his energies to fight more. He regains {@dice 5d8 + 20} hit points"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Haruki adds 6 to its AC against one attack that would hit it. To do so, Haruki must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Hisui",
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "Oni",
+						"prefix": "Lower moon 3"
+					}
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				18
+			],
+			"hp": {
+				"formula": "21d8 + 105",
+				"average": 199
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 20,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"str": "+11",
+				"con": "+10"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+6",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "Bludgeoning, piercing and slashing from nonmagical weapons. Every other damage that's not from a magical source."
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"name": "Demonic Immortality",
+					"entries": [
+						"The Demon only dies, or become uncounscious in order to have 0 hit points if the damage is dealt by a magic source. Like spells, magic weapons and magic abilities. After they die, they transform into ashes, as they burn.",
+						"Also, they are immune to Disease."
+					]
+				},
+				{
+					"name": "Demonic Strength",
+					"entries": [
+						"The demon can jump as much as it has movement speed with no need of a running start."
+					]
+				},
+				{
+					"name": "Sunlight Hypersensitivity",
+					"entries": [
+						"While in sunlight, the Demon takes 30 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks.The damage stacks, dealing plus 30 for every turn the demon starts in sunlight, and restarting when he doesn't start his turn in sunlight. For example, in the first turn, the demon takes 30 radiant damage, in the second, he takes 60."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The Demon regains 30 hit points at the start of his turn. If he takes radiant damage from Sunlight Hypersensivity, this trait doesn't work until the end of his next turn."
+					]
+				},
+				{
+					"name": "Wisteria Weakness",
+					"entries": [
+						"The Demons have aversion to Wisterias, if they start their turn while in contact to these flowers (At least half covered by them), the demon takes 10 poison damage, which ignores his resistances and immunities.",
+						"Poisons made of wisterias also ignore the demon's immunities and resistances, including the condition immunities.",
+						"Large Wisteria concentrations also damage them. When they begin, and end their turn at least 10 feet close to a Wisteria Concentration, they take 10 poison damage, and make a CD 16 constitution saving throw against Wisteria Poison. If the demon fails, he gets {@condition poisoned} for {@dice 1d4} rounds.",
+						"When a demon take damage in this way, it can't regenerate until the end of his next turn."
+					]
+				},
+				{
+					"name": "Kekkijutsu: Twin Flaming Blades",
+					"entries": [
+						"With his blood, Hisui put his swords aflame, dealing extra {@damage 1d8} fire damage on melee attacks with them. And having some actions to use more of it."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Hisui makes three attacks"
+					]
+				},
+				{
+					"name": "Fiery Katana",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d6 + 6}) slashing damage, plus 4 ({@damage 1d8}) fire damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Ignite [Recharge 5-6]",
+					"entries": [
+						"Hisui ignites his twin blades, empowering his next attack that hits. Creating a vortex of flames around the target of the attack. Every creature within 10 feets of the target (including the target) must make a Dexterity Saving Throw CD 19, taking {@damage 8d6} fire damage, or half as much in a success."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Hisui adds 5 to its AC against one attack that would hit it. To do so,he must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Hisui makes an attack"
+					]
+				},
+				{
+					"name": "Ignite (2 actions)",
+					"entries": [
+						"Hisui recharges its ignite action"
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Hisui moves up to its speed, or half of its speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552939792866869249/957550813390196786/token_2_2.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/552939792866869249/957550813390196786/token_2_2.png",
+			"traitTags": [
+				"Regeneration",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Kaonashi",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "Oni",
+						"prefix": "Upper Moon (6)"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"condition": "(Natural Armor)"
+				}
+			],
+			"hp": {
+				"formula": "45d8 + 225",
+				"average": 427
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 22,
+			"con": 20,
+			"int": 15,
+			"wis": 18,
+			"cha": 14,
+			"save": {
+				"con": "+12",
+				"int": "+9"
+			},
+			"skill": {
+				"perception": "+11",
+				"sleight of hand": "+13",
+				"acrobatics": "+13",
+				"athletics": "+12",
+				"stealth": "+13"
+			},
+			"senses": [
+				"Darkvision 120 ft",
+				"Blindsight 30 ft"
+			],
+			"passive": 21,
+			"resist": [
+				{
+					"special": "Bludgeoning, piercing and slashing from nonmagical weapons. Every other damage that's not from a magical source."
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "21",
+			"pbNote": "+7",
+			"trait": [
+				{
+					"name": "Sunlight Hypersensitivity.",
+					"entries": [
+						"While in sunlight, the Demon takes 30 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks.The damage stacks, dealing plus 30 for every turn the demon starts in sunlight, and restarting when he doesn't start his turn in sunlight. For example, in the first turn, the demon takes 30 radiant damage, in the second, he takes 60."
+					]
+				},
+				{
+					"name": "Demonic Immortality",
+					"entries": [
+						"The Demon only dies, or become uncounscious in order to have 0 hit points if the damage is dealt by a magic source. Like spells, magic weapons and magic abilities. After they die, they transform into ashes, as they burn.",
+						"Also, they are immune to Disease."
+					]
+				},
+				{
+					"name": "Superior Regeneration",
+					"entries": [
+						"The Demon regains 50 hit points at the start of his turn. If he takes radiant damage from Sunlight Hypersensivity, this trait doesn't work until the end of his next turn.",
+						"The demon dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Wisteria Weakness",
+					"entries": [
+						"The Demons have aversion to Wisterias, if they start their turn while in contact to these flowers (At least half covered by them), the demon takes 10 poison damage, which ignores his resistances and immunities. ",
+						"Poisons made of wisterias also ignore the demon's immunities and resistances, including the condition immunities. ",
+						"Large Wisteria concentrations also damage them. When they begin, and end their turn at least 10 feet close to a Wisteria Concentration, they take 10 poison damage, and make a CD 16 constitution saving throw against Wisteria Poison. If the demon fails, he gets {@condition poisoned} for {@dice 1d4} rounds.   ",
+						"When a demon take damage in this way, it can't regenerate until the end of his next turn."
+					]
+				},
+				{
+					"name": "Demonic Strength",
+					"entries": [
+						"The demon can jump as much as it has movement speed with no need of a running start."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Demon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Unstoppable Threat",
+					"entries": [
+						"The creature is a powerful foe that cannot be stopped  easily",
+						"• This creature can't have their speed reduced to less than half of their maximum speed. If the creature is {@condition grappled}, it  can either dismiss the grapple spending 10 feet of movement, or drag the grappler with them, unless the grappler choose to end the grapple.",
+						"• If the creature fails a saving throw that: Gives disadvantage to any of the creature's rolls; reduce it's speed or limit its number of actions or attacks. The creature will then have advantage on the next saving throw it makes against those effects. If the creature fails such a save twice, it will also add +5 to their next saving throw.",
+						"• The creature can always use their action to attack at least once in their turn."
+					]
+				},
+				{
+					"name": "Coordinated Movement",
+					"entries": [
+						"If the Kaonashi's duplicates have consecutive initiatives, they act in the same turn. "
+					]
+				},
+				{
+					"name": "Kekkijutsu: Ink Manifestations",
+					"entries": [
+						"Kaonashi can create duplicates of himself whenever he uses its Superior Regeneration Trait, creating up to 3 duplicates, dividing the hit points he would regenerate to these duplicates. He can also regenerate the duplicates instead of himself, dividing the hit points between any number of duplicates.",
+						"The duplicates don't have the Superior Regeneration and Unstoppable Threat traits, and don't have proficiency in their saving throws.",
+						"When Kaonashi rolls initiative, he is able to create up to 6 duplicates, each with 50 hp. ",
+						"Kaonashi can have up to 8 active duplicates at once, and each of them must appear at a space that has ink prepared. "
+					]
+				},
+				{
+					"name": "Turnos 0",
+					"entries": [
+						"- Todas as Duplicatas se movem até metade de seu deslocamento e fazem um ataque contra uma criatura.",
+						"- Até metade das duplicatas podem se mover 5 pés e devorar uma outra duplicata, ela pega os pontos de vida da duplicata que devorou para si, e terá vantagem em todos os ataques e salvaguardas até o final de seu próximo turno."
+					]
+				},
+				{
+					"name": "Kekkijutsu: Ink Travel",
+					"entries": [
+						"Kaonashi can magically enter in any type of ink, and move with it through walls, ceilings and normal ground. He's imperceivable if he's not moving, and may roll a stealth check as a bonus action while moving through ink to move undetected. "
+					]
+				},
+				{
+					"name": "Second Form: Thousand Brushtrokes (Turn 0)",
+					"entries": [
+						"If Kaonashi is in disadvantage, or can't create much more duplicates, he will be inclined to devour the other duplicates and fight alone. ",
+						"In this form his unarmed strikes are stronger, his reach incrases to 10 feet, and he can target two creatures per attack."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kaonashi makes Four Attacks If its a duplicate, it instead makes Two Attacks"
+					]
+				},
+				{
+					"name": "Blinding Ink",
+					"entries": [
+						"Kaonashi exhales a 10-foot cone of ink. Each creature in that area must succeed on a {@dc 21} Dexterity saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d6 + 7}) damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit +12} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 7}) piercing damage. If the target is a Large or smaller creature {@condition grappled} by Kaonashi, that creature is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside Kaonashi, and it takes 17 ({@damage 5d6}) necrotic damage at the start of each of Kaonashi's turns. If Kaonashi takes 25 damage or more on a single turn from a creature inside it, Kaonashi must succeed on a {@dc 20} saving throw at the end of that turn or regurgitate all swallowed creatures, which fall {@condition prone} in a space within 10 feet of Kaonashi. If Kaonashi dies, a swallowed creature is no longer {@condition restrained} by it  exiting {@condition prone}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Undetectable Ink",
+					"entries": [
+						"While moving through Ink, Kaonashi can roll a stealth check to move undetected."
+					]
+				},
+				{
+					"name": "Inkly Whip",
+					"entries": [
+						"The next attack made by Kaonashi can reach up to 15 feet, this attack can be a grapple, if the grapple succeeds the creature is pulled up to 15 feet."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Decompose Poison",
+					"entries": [
+						"The demon can choose to succeed in the next poison saving throw if he's already {@condition poisoned}, forcing the save in advance when he uses the Legendary action."
+					]
+				},
+				{
+					"name": "Forced Regeneration (costs 2 actions)",
+					"entries": [
+						"The demon uses it's regeneration trait."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The demon moves up to its movement."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Satsujin makes a Kris attack"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552939792866869249/1132739023396409475/token_2_3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/552939792866869249/1132739023396409475/token_2_3.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Swallow"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"N",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Satsujin Hebi",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "Oni",
+						"prefix": "Upper Moon (5)"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"condition": "(Natural Armor)"
+				}
+			],
+			"hp": {
+				"formula": "45d8 + 315",
+				"average": 517
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 20,
+			"dex": 24,
+			"con": 24,
+			"int": 15,
+			"wis": 18,
+			"cha": 14,
+			"save": {
+				"dex": "+14",
+				"int": "+9",
+				"wis": "+11"
+			},
+			"skill": {
+				"stealth": "+14",
+				"acrobatics": "+14",
+				"athletics": "+12",
+				"perception": "+11",
+				"sleight of hand": "+14"
+			},
+			"senses": [
+				"Darkvision 120 ft",
+				"Blindsight 30 ft"
+			],
+			"passive": 21,
+			"resist": [
+				{
+					"special": "Bludgeoning, piercing and slashing from nonmagical weapons. Every other damage that's not from a magical source."
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "30",
+			"pbNote": "+7",
+			"trait": [
+				{
+					"name": "Sunlight Hypersensitivity.",
+					"entries": [
+						"While in sunlight, the Demon takes 30 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks.The damage stacks, dealing plus 30 for every turn the demon starts in sunlight, and restarting when he doesn't start his turn in sunlight. For example, in the first turn, the demon takes 30 radiant damage, in the second, he takes 60."
+					]
+				},
+				{
+					"name": "Demonic Immortality",
+					"entries": [
+						"The Demon only dies, or become uncounscious in order to have 0 hit points if the damage is dealt by a magic source. Like spells, magic weapons and magic abilities. After they die, they transform into ashes, as they burn.",
+						"Also, they are immune to Disease."
+					]
+				},
+				{
+					"name": "Superior Regeneration",
+					"entries": [
+						"The Demon regains 50 hit points at the start of his turn. If he takes radiant damage from Sunlight Hypersensivity, this trait doesn't work until the end of his next turn.",
+						"The demon dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Wisteria Weakness",
+					"entries": [
+						"The Demons have aversion to Wisterias, if they start their turn while in contact to these flowers (At least half covered by them), the demon takes 10 poison damage, which ignores his resistances and immunities. ",
+						"Poisons made of wisterias also ignore the demon's immunities and resistances, including the condition immunities. ",
+						"Large Wisteria concentrations also damage them. When they begin, and end their turn at least 10 feet close to a Wisteria Concentration, they take 10 poison damage, and make a CD 16 constitution saving throw against Wisteria Poison. If the demon fails, he gets {@condition poisoned} for {@dice 1d4} rounds.   ",
+						"When a demon take damage in this way, it can't regenerate until the end of his next turn."
+					]
+				},
+				{
+					"name": "Demonic Strength",
+					"entries": [
+						"The demon can jump as much as it has movement speed with no need of a running start."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the demon is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the demon instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Demon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Death Breathing",
+					"entries": [
+						"If any of Satsujin's attacks knock a creature down to 0 hit points, the creature will have its first death save count as Failed immediately."
+					]
+				},
+				{
+					"name": "First Form: Unseen Execution",
+					"entries": [
+						"At the start of Satsujin's turns, every creature must make a perception check CD 24 (or use it's own passive perception). Satsujin has advantage on all attacks against creatures that have failed the perception check, as his blade flows in an extremely hard to perceive motion. ",
+						"A creature can use it's reaction to focus it's sight to Satsujin's blade, gaining advantage on the perception check, and raising it's passive perception by 5 for that round."
+					]
+				},
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, Satsujin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit Satsujin scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, Satsujin deals an extra 14 ({@dice 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the creature is within 5 feet of Satsujin, and no other creature is within 5 feet of him, but  and Satsujin doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Satsujin makes four Kris attacks, and can substitute one of the attacks for a Breathing Technique attack"
+					]
+				},
+				{
+					"name": "Kris",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}14 ({@damage 1d8 + 10}) slashing damage, plus 14 ({@damage 4d6}) necrotic damage.",
+						"If the attack is a critical hit, the target takes an extra ({@damage 4d6}) slashing damage"
+					]
+				},
+				{
+					"name": "Second Form: Serpent's Lunge",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 10 ft., two targets. {@h}14 ({@damage 1d8 + 10}) slashing damage, plus 14 ({@damage 4d6}) necrotic damage.",
+						"If the attack is a critical hit, the target takes an extra ({@damage 4d6}) slashing damage"
+					]
+				},
+				{
+					"name": "Fourth Form: Coil Choke",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}32 ({@damage 5d8 + 10}) slashing damage, plus 14 ({@damage 4d6}) necrotic damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Third Form: Marked for Death",
+					"entries": [
+						"If a creature has taken necrotic damage from Satsujin on this turn, they get marked until the start of Satsujin's next turn. While marked, a creature can't regain hit points."
+					]
+				},
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Satsujin can take a bonus action on each of his turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Fifth Form: Reactive Fang",
+					"entries": [
+						"Satsujin attacks a creature that tries to attack him, if Satsujin hits, the attacker has disadvantage on that attack,"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Decompose Poison",
+					"entries": [
+						"The demon can choose to succeed in the next poison saving throw if he's already {@condition poisoned}, forcing the save in advance when he uses the Legendary action."
+					]
+				},
+				{
+					"name": "Forced Regeneration (costs 2 actions)",
+					"entries": [
+						"The demon uses it's regeneration trait."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The demon moves up to its movement."
+					]
+				},
+				{
+					"name": "Fifth Form: Slithering Slaughter (costs 2 actions)",
+					"entries": [
+						"Satsujin moves up to it's speed, he can pass through other creature's spaces without penalties, and attacks each creature he passes through once.",
+						"This attack does not have the additional effects of Kris attacks, only the base slashing damage."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Satsujin makes a Kris attack"
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552939792866869249/1132739023396409475/token_2_3.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/552939792866869249/1132739023396409475/token_2_3.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Sneak Attack"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"N",
+				"R",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Tempest Shinigami",
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"Studded Leather Armor"
+					],
+					"condition": "22 while wielding Raijin"
+				}
+			],
+			"hp": {
+				"formula": "24d10 + 96",
+				"average": 228
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 19,
+			"int": 13,
+			"wis": 17,
+			"cha": 12,
+			"save": {
+				"dex": "+11",
+				"wis": "+9",
+				"str": "+9"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"stealth": "+11",
+				"survival": "+9",
+				"perception": "+9",
+				"intimidation": "+7",
+				"religion": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 19,
+			"languages": [
+				"Common"
+			],
+			"cr": "18",
+			"trait": [
+				{
+					"name": "Raijin",
+					"entries": [
+						"The Tempest Shinigami wields Raijin, a weapon enhanced by its blood mark. The weapon has several properties. ",
+						"• Attacks with Raijin doesn't have disadvantage due to having a creature in melee range.",
+						"• The weapon hovers at a unnocupied space adjacent to the target of its ranged attacks.",
+						"• While hovering, a line between the weapon and the shinigami exists. Any creature that pass through or get passe by that space must do a {@dc 19} Dexterity saving throw,  taking [[{@dice 3d6}]] lightning damage, or half as much damage in a success. A creature can take damage from this only once per round.",
+						"• While wielding Raijin, the Shinigami has resistance to lightning and thunder damage, and has a +2 bonus to its AC."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the tempest shinigami is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the tempest shinigami instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the tempest shinigami fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tempest Shinigami makes three attacks."
+					]
+				},
+				{
+					"name": "Raijin",
+					"entries": [
+						"{@atk mw,rw} {@hit 11} to hit, reach 5 ft. or range 60/60 ft., one target. {@h}15 ({@damage 3d6 + 5}) slashing damage in melee, or 15 ({@damage 3d6 + 5}) damage at range, plus 10 ({@damage 3d6}) lightning damage."
+					]
+				},
+				{
+					"name": "Fuujin",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage, plus 14 ({@damage 4d6}) thunder damage. A creature must make a CD 19 Strength saving throw or be pushed up to 15 feet away from the Shinigami."
+					]
+				},
+				{
+					"name": "Thunderous Bounce {@recharge 5}",
+					"entries": [
+						"The Shinigami makes a ranged Raijin attack against up to 6 creatures, whether it hits or misses, the targets must make a CD 19 Constitution saving throw, taking [[{@dice 6d6}]] thunder damage, or half in a success. If a creature fails by 5 or more (14) it is also {@condition stunned} for one minute, it can repeat the save at the end of each of its turns."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Lightning Transposition",
+					"entries": [
+						"The Tempest Shinigami vanishes into lightning and teleports to the location of Raijin, and wields it."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Lightning Reprisal",
+					"entries": [
+						"When a creature hits the Shinigami with a melee attack and he is wielding Raijin, he can use its reaction to deal [[{@dice 4d10}]] lightning damage to the attacker."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"The Tempest Shinigami makes an attack."
+					]
+				},
+				{
+					"name": "Lightning Transposition (2 actions)",
+					"entries": [
+						"The Tempest Shinigami uses Lightning Transposition."
+					]
+				},
+				{
+					"name": "Thunderous Chain",
+					"entries": [
+						"The chain bursts in thunderous energy, any creature besides the shinigami that is within 10 feet of the chain must make a {@dc 19} Constitution saving throw or take {@damage 4d6} thunder damage and be pushed 10 feet away, or half damage and not be pushed away in a success."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.discordapp.com/attachments/552939792866869249/892676671914790912/token_1_2.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://cdn.discordapp.com/attachments/552939792866869249/892676671914790912/token_1_2.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Tetsukiri Dazai",
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "20d8 + 80",
+				"average": 170
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 14,
+			"wis": 22,
+			"cha": 16,
+			"save": {
+				"str": "+10",
+				"con": "+10",
+				"wis": "+12"
+			},
+			"skill": {
+				"athletics": "+10",
+				"acrobatics": "+7",
+				"insight": "+12",
+				"history": "+8",
+				"investigation": "+8",
+				"perception": "+12",
+				"survival": "+12"
+			},
+			"senses": [
+				"blindsight 10 ft."
+			],
+			"passive": 22,
+			"languages": [
+				"Common"
+			],
+			"cr": "19",
+			"trait": [
+				{
+					"name": "Tetsukiri Battōjutsu",
+					"entries": [
+						"Tetsukiri Dazai can cut even iron. Creatures and objects have vulnerabity to slashing damage dealt by Dazai.",
+						"Dazai's weapons are considered magical +3, and if he rolls a 20 on the attack roll, the target receives an extra {@damage 6d8} slashing damage. On a critical, it rolls another {@dice d20}, if the roll is another 20, he can choose to decepate one limb, or cut an eye.",
+						"Additionally the first attack on Dazai's turn deal an extra {@damage 5d10} slashing damage."
+					]
+				},
+				{
+					"name": "Invincible under the sun",
+					"entries": [
+						"At the start of each of Dazai's turns he gains 50 temporary hit points and advantage on all weapon attacks on that turn, provided that he is not {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Indomitable Spirit (3/day)",
+					"entries": [
+						"If Dazai fails a saving throw, he can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Tetsukiri Dazai attacks three times."
+					]
+				},
+				{
+					"name": "Tetsukiri Battōjutsu",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}40 ({@damage 6d10 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tetsukiri",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}12 ({@damage 1d10 + 7}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reprisal",
+					"entries": [
+						"Dazai can add 6 to its AC against one melee attack that would hit, then he can immediately make one melee attack against the attacker."
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Upper Moon Template",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					{
+						"tag": "Oni",
+						"prefix": "Upper Moon ()"
+					}
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"formula": "1d8 + 5",
+				"average": 0
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 20,
+			"int": 14,
+			"senses": [
+				"Darkvision 120 ft",
+				"Blindsight 30 ft"
+			],
+			"passive": 10,
+			"resist": [
+				{
+					"special": "Bludgeoning, piercing and slashing from nonmagical weapons. Every other damage that's not from a magical source."
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "30",
+			"trait": [
+				{
+					"name": "Sunlight Hypersensitivity.",
+					"entries": [
+						"While in sunlight, the Demon takes 30 radiant damage at the start of his turn, and he has disadvantage on attack rolls and ability checks.The damage stacks, dealing plus 30 for every turn the demon starts in sunlight, and restarting when he doesn't start his turn in sunlight. For example, in the first turn, the demon takes 30 radiant damage, in the second, he takes 60."
+					]
+				},
+				{
+					"name": "Demonic Immortality",
+					"entries": [
+						"The Demon only dies, or become uncounscious in order to have 0 hit points if the damage is dealt by a magic source. Like spells, magic weapons and magic abilities. After they die, they transform into ashes, as they burn.",
+						"Also, they are immune to Disease."
+					]
+				},
+				{
+					"name": "Superior Regeneration",
+					"entries": [
+						"The Demon regains 50 hit points at the start of his turn. If he takes radiant damage from Sunlight Hypersensivity, this trait doesn't work until the end of his next turn.",
+						"The demon dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				},
+				{
+					"name": "Wisteria Weakness",
+					"entries": [
+						"The Demons have aversion to Wisterias, if they start their turn while in contact to these flowers (At least half covered by them), the demon takes 10 poison damage, which ignores his resistances and immunities. ",
+						"Poisons made of wisterias also ignore the demon's immunities and resistances, including the condition immunities. ",
+						"Large Wisteria concentrations also damage them. When they begin, and end their turn at least 10 feet close to a Wisteria Concentration, they take 10 poison damage, and make a CD 16 constitution saving throw against Wisteria Poison. If the demon fails, he gets {@condition poisoned} for {@dice 1d4} rounds.   ",
+						"When a demon take damage in this way, it can't regenerate until the end of his next turn."
+					]
+				},
+				{
+					"name": "Demonic Strength",
+					"entries": [
+						"The demon can jump as much as it has movement speed with no need of a running start."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the demon is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the demon instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Demon fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Decompose Poison",
+					"entries": [
+						"The demon can choose to succeed in the next poison saving throw if he's already {@condition poisoned}, forcing the save in advance when he uses the Legendary action."
+					]
+				},
+				{
+					"name": "Forced Regeneration (costs 2 actions)",
+					"entries": [
+						"The demon uses it's regeneration trait."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"The demon moves up to its movement."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"R"
+			]
+		},
+		{
+			"name": "zap",
+			"source": "ZerosCauldronofAtrocities",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"cr": "0"
+		}
+	]
+}
